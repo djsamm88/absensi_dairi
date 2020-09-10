@@ -100,10 +100,10 @@ $db['default'] = array(
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sibahanpe.pakpakbharatkab.go.id',
-	'username' => 'bahanpe',
-	'password' => 'Admin@123',
-	'database' => 'absensi',
+	'hostname' => 'localhost',
+	'username' => 'c1pakpakbharat',
+	'password' => 'pakpakbharat123!',
+	'database' => 'c1presensi',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
