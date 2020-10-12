@@ -51,7 +51,7 @@ class Api extends CI_Controller {
     $data['tgl_cut_tah']=$this->m_absensi->m_tbl_cuti_tahunan($nik,$bulan);
 		$data['tbl_surat_ijin_keterangan']=$this->m_absensi->m_tbl_surat_ijin_keterangan($nik,$bulan);
 		//ambil_data dari e kinerja
-		$data['ekinerja'] = json_decode(exec_url("https://ekinerja.pakpakbharatkab.go.id/res/get_json_hasil.php?menu=laporan_bulanan&judul=Laporan%20Bulanan&aksi=cari&bulan=$bulan&keywords=$tahun&nip=$nik"));
+		$data['ekinerja'] = json_decode(exec_url("https://ekinerja.dairikab.go.id/res/get_json_hasil.php?menu=laporan_bulanan&judul=Laporan%20Bulanan&aksi=cari&bulan=$bulan&keywords=$tahun&nip=$nik"));
 		
 		
 		$data['bulan'] = $bulan;
@@ -88,7 +88,7 @@ class Api extends CI_Controller {
         $data['tgl_cut_tah']=$this->m_absensi->m_tbl_cuti_tahunan($nik,$bulan);
 		$data['tbl_surat_ijin_keterangan']=$this->m_absensi->m_tbl_surat_ijin_keterangan($nik,$bulan);
 		//ambil_data dari e kinerja
-		$data['ekinerja'] = json_decode(exec_url("https://ekinerja.pakpakbharatkab.go.id/res/get_json_hasil2.php?menu=laporan_bulanan&judul=Laporan%20Bulanan&aksi=cari&bulan=$bulan&keywords=$tahun&nip=$nik"));
+		$data['ekinerja'] = json_decode(exec_url("https://ekinerja.dairikab.go.id/res/get_json_hasil2.php?menu=laporan_bulanan&judul=Laporan%20Bulanan&aksi=cari&bulan=$bulan&keywords=$tahun&nip=$nik"));
 		
 		
 		$data['bulan'] = $bulan;

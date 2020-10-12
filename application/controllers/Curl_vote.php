@@ -32,7 +32,7 @@ class Curl_vote extends CI_controller{
 
     	foreach($x as $data)
         {
-        	$url = "https://sibahanpe.pakpakbharatkab.go.id/sibahanpe/index.php/vote/rekap_laporan/?bulan=$bulan&tahun=$tahun&OPD=$data->ID_OPD";
+        	$url = base_url()."index.php/vote/rekap_laporan/?bulan=$bulan&tahun=$tahun&OPD=$data->ID_OPD";
         	exec_url($url);
         }
     }

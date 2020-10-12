@@ -70,7 +70,7 @@ class Laporan extends CI_Controller {
 		$staf = $this->m_absensi->m_staf_info($ID_OPD);		
 		$bulan = $this->input->get('bulan');
 		$tahun = $this->input->get('tahun');
-		$url_ekinerja = "https://ekinerja.pakpakbharatkab.go.id/res/get_json_hasil.php";
+		$url_ekinerja = "https://ekinerja.dairikab.go.id/res/get_json_hasil.php";
 		foreach($staf as $data)	
 		{
 			$nip = $data->NIK;
@@ -108,7 +108,7 @@ class Laporan extends CI_Controller {
 	public function go_sinkron()
 	{
 		//$url_ekinerja = "http://192.168.43.45/coba/get_json_hasil.json";
-		$url_ekinerja = "https://ekinerja.pakpakbharatkab.go.id/res/get_json_hasil.php";
+		$url_ekinerja = "https://ekinerja.dairikab.go.id/res/get_json_hasil.php";
 		$bulan = $this->input->get('bulan');
 		$tahun = $this->input->get('tahun');
 		$nip = $this->input->get('nip');
